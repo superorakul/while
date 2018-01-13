@@ -3,7 +3,7 @@ f = 0
 res = 1
 f0 = 1
 i = 0
-while i < n:
+while f <= n:
     res = f
     f = f0 + f
     f0 = res
@@ -11,5 +11,8 @@ while i < n:
     if n == f:
         print(i)
         break
-if n == 0:
+if n < 0 or n != f:
+    print(-1)
+elif n == 0:
     print(0)
+    
